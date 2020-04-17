@@ -1,5 +1,7 @@
 body {
   font-family: "Raleway", sans-serif;
+  background-color: #f2f2f2;
+  overflow-x: hidden;
 }
 
 .products, .contacts, .partners, .advantages {
@@ -18,7 +20,7 @@ body {
   background-position: center;
   background-size: cover;
   height: 100vh;
-  width: 100v;
+  width: 100%;
 }
 
 header {
@@ -36,6 +38,7 @@ header {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  z-index: 999;
 }
 
 .logo_img-size {
@@ -81,6 +84,7 @@ header {
   font-family: "Roboto", sans-serif;
   color: #f2f2f2;
   margin-right: 15px;
+  font-size: 20px;
 }
 
 .main-content {
@@ -120,5 +124,62 @@ header {
 .main-content__btn-down {
   width: 100%;
   text-align: center;
+}
+
+.title__style {
+  text-transform: uppercase;
+  text-align: center;
+  margin: 75px;
+}
+
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.card {
+  width: 300px;
+}
+
+.card-img_size {
+  height: 187px;
+}
+
+.card-body {
+  text-align: center;
+}
+
+.card-link {
+  color: #27AE60;
+}
+
+.card-link:hover {
+  color: #6FCF97;
+}
+
+.delivery__subtitle {
+  width: 65vw;
+  text-align: center;
+}
+
+.modal-body_font {
+  font-family: "Roboto", sans-serif;
+}
+
+.headerScroll {
+  background-color: rgba(51, 51, 51, 0.7);
 }
 /*# sourceMappingURL=style.css.map */
