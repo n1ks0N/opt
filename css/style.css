@@ -129,7 +129,7 @@ header {
 .title__style {
   text-transform: uppercase;
   text-align: center;
-  margin: 75px;
+  padding: 75px;
 }
 
 .cards {
@@ -170,9 +170,48 @@ header {
   color: #6FCF97;
 }
 
-.delivery__subtitle {
-  width: 65vw;
+.delivery-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.delivery__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
+  width: 500px;
+}
+
+.delivery__special-text_font {
+  font-family: "Roboto", sans-serif;
+}
+
+.partners__image_size {
+  width: 200px;
 }
 
 .modal-body_font {
