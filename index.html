@@ -21,31 +21,50 @@
     <main>
         <section class="main">
             <header>
+                <div class="logo">
+                    <a href="#"><img src="images/коробочка.png" alt="" class="logo_img-size"></a>
+                </div>
                 <nav class="menu-header">
                     <li class="menu-header__link">
-                        <a href="#products" class="menu-header_color">Товары</a>
+                        <a href="#products" class="menu-header__link_color">Товары</a>
                     </li>
                     <li class="menu-header__link">
-                        <a href="#advantages" class="menu-header_color">Преимущества</a>
+                        <a href="#advantages" class="menu-header__link_color">Преимущества</a>
                     </li>
                     <li class="menu-header__link">
-                        <a href="#contacts" class="menu-header_color">Контакты</a>
+                        <a href="#contacts" class="menu-header__link_color">Контакты</a>
                     </li>
                     <li class="menu-header__link">
-                        <a href="#partners" class="menu-header_color">Партнеры</a>
+                        <a href="#partners" class="menu-header__link_color">Партнеры</a>
                     </li>
                 </nav>
                 <div class="callback">
                     <a href="tel:+" class="callback__tel">8 (495) 777-77-77</a>
-                    <button type="button" class="btn btn-primary">Заказать звонок</button>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#callback">Заказать звонок</button>
                 </div>
                 <!-- /callback -->
             </header>
-            <h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h1>
-            <h2>Consequatur iure necessitatibus deleniti odio harum nam.</h2>
-            <button class="btn">Сделать заказ</button>
+            <div class="main-content">
+                <div class="main-content__text">
+                    <h1 class="main-content__title">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h1>
+                    <h2 class="main-content__subtitle">Consequatur iure necessitatibus deleniti odio harum nam.</h2>
+                    <button type="button" class="btn btn-success btn-lg main-content__btn">Сделать заказ</button>
+                </div>
+                <!-- titles /main-content__text -->
+                <div class="main-content__btn-down">
+                    <a href="#products">
+                        <svg class="bi bi-chevron-down" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 01.708 0L8 10.293l5.646-5.647a.5.5 0 01.708.708l-6 6a.5.5 0 01-.708 0l-6-6a.5.5 0 010-.708z" clip-rule="evenodd"/>
+                        </svg>
+                    </a>
+                </div>
+                <!-- button-down /main-content__btn -->
+            </div>
         </section>
         <section class="products">
+
+        </section>
+        <section class="advantages">
 
         </section>
         <section class="contacts">
@@ -54,13 +73,35 @@
         <section class="partners">
 
         </section>
-        <section class="advantages">
-
-        </section>
     </main>
     <footer>
 
     </footer>
+    <!-- Modals-->
+    
+    <!-- Modal CallBack -->
+    <div class="modal fade" id="callback" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Modal CallBack -->
+
+    <!-- /Modals -->
     <!-- Srcipt -->
     <script src="js/script.js"></script>
 </body>

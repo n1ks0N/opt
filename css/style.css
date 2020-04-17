@@ -2,9 +2,14 @@ body {
   font-family: "Raleway", sans-serif;
 }
 
+.products, .contacts, .partners, .advantages {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
 .main {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(https://www.utupack.ru/image/catalog/blog/gofronews/five-trands/online-store-pack.jpg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://www.utupack.ru/image/catalog/blog/gofronews/five-trands/online-store-pack.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../images/main.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/main.jpg);
   background-position: center;
   background-size: cover;
   height: 100vh;
@@ -12,6 +17,8 @@ body {
 }
 
 header {
+  position: fixed;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -24,6 +31,10 @@ header {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+}
+
+.logo_img-size {
+  height: 54px;
 }
 
 .menu-header {
@@ -44,13 +55,35 @@ header {
   margin: 20px 25px;
 }
 
-.menu-header_color, .menu-header_color:hover {
+.menu-header__link_color, .menu-header__link_color:hover {
   color: #f2f2f2;
+}
+
+.callback {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .callback__tel, .callback__tel:hover {
   font-family: "Roboto", sans-serif;
   color: #f2f2f2;
+  margin-right: 15px;
+}
+
+.main-content {
+  height: 100vh;
+}
+
+.main-content__text {
+  height: 95vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -64,13 +97,18 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  align-items: center;
 }
 
-.products, .contacts, .partners, .advantages {
-  max-width: 1280px;
-  margin: 0 auto;
+.main-content__title {
+  color: #fff;
+}
+
+.main-content__subtitle {
+  color: #f2f2f2;
+}
+
+.main-content__btn {
+  margin: 25px;
 }
 /*# sourceMappingURL=style.css.map */
