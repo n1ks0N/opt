@@ -7,6 +7,11 @@ body {
   margin: 0 auto;
 }
 
+.selector-for-some-widget {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
 .main {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../images/main.jpg);
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/main.jpg);
@@ -110,5 +115,10 @@ header {
 
 .main-content__btn {
   margin: 25px;
+}
+
+.main-content__btn-down {
+  width: 100%;
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
