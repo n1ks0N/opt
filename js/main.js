@@ -10,5 +10,13 @@ $(document).ready(function() {
         } else {
             $('header').removeClass('headerScroll');
         }
-    })
-})
+    });
+
+    $(function() {
+        $('.menu-header__link_color').on('click', function() {
+            $('html, body').animate({
+                scrollTop: $('#top').offset().top
+            }, 600);
+        });
+    });
+});
