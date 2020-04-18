@@ -18,7 +18,19 @@
         <section class="main">
             <header>
                 <div class="logo">
-                    <a href="#"><img src="images/logo.png" alt="" class="logo_img-size"></a>
+                    <a href="#" class="desktop"><img src="images/logo.png" alt="" class="logo_img-size"></a>
+                    <div class="dropdown phone">
+                        <button class="btn btn-link" type="button" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <hr class="dropdown__hr">
+                            <hr class="dropdown__hr">
+                            <hr class="dropdown__hr">
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenu">
+                            <button class="dropdown-item" type="button">Action</button>
+                            <button class="dropdown-item" type="button">Another action</button>
+                            <button class="dropdown-item" type="button">Something else here</button>
+                        </div>
+                    </div>
                 </div>
                 <nav class="menu-header">
                     <li class="menu-header__link">
@@ -39,7 +51,7 @@
                 </nav>
                 <div class="callback">
                     <a href="tel:+" class="callback__tel">8 (495) 777-77-77</a>
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#callback">Заказать звонок</button>
+                    <button type="button" class="btn btn-primary desktop" data-toggle="modal" data-target="#callback">Заказать звонок</button>
                 </div>
                 <!-- /callback -->
             </header>
