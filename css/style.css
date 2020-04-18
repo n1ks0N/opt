@@ -4,9 +4,10 @@ body {
   overflow-x: hidden;
 }
 
-.products, .contacts, .partners, .advantages {
+.products, .contacts, .advantages, .delivery {
   max-width: 1280px;
   margin: 0 auto;
+  padding-bottom: 50px;
 }
 
 .selector-for-some-widget {
@@ -14,6 +15,7 @@ body {
           box-sizing: content-box;
 }
 
+/* main */
 .main {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../images/main.jpg);
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/main.jpg);
@@ -23,6 +25,7 @@ body {
   width: 100%;
 }
 
+/* header */
 header {
   position: fixed;
   width: 100%;
@@ -87,6 +90,7 @@ header {
   font-size: 20px;
 }
 
+/* main-content */
 .main-content {
   height: 100vh;
 }
@@ -126,6 +130,7 @@ header {
   text-align: center;
 }
 
+/* products */
 .title__style {
   text-transform: uppercase;
   text-align: center;
@@ -170,6 +175,7 @@ header {
   color: #6FCF97;
 }
 
+/* delivery */
 .delivery-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -206,12 +212,146 @@ header {
   width: 500px;
 }
 
+.delivery__headline {
+  margin-top: 15px;
+}
+
 .delivery__special-text_font {
   font-family: "Roboto", sans-serif;
 }
 
+/* partners */
+.partners {
+  background-color: #fff;
+  padding-bottom: 50px;
+}
+
+.partners__image {
+  background-color: #fff;
+  margin: 25px;
+}
+
+.partners__images-small {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.partners__images-large {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.partners__image_size_s {
+  width: 400px;
+  height: 150px;
+}
+
+.partners__image_size_l {
+  width: 225px;
+  height: 200px;
+}
+
 .partners__image_size {
-  width: 200px;
+  width: 100%;
+  height: 100%;
+}
+
+/* contacts */
+.contacts-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contacts-info, .contacts-form {
+  width: 50%;
+  height: 500px;
+}
+
+.contacts-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.contacts-info__data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.contacts-form__input_font, .contacts-info__data_font {
+  font-family: "Roboto", sans-serif;
+}
+
+.contacts-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .modal-body_font {

@@ -28,13 +28,13 @@
                         <a href="#advantages" class="menu-header__link_color">Преимущества</a>
                     </li>
                     <li class="menu-header__link">
+                        <a href="#delivery" class="menu-header__link_color">Доставка</a>
+                    </li>
+                    <li class="menu-header__link">
+                        <a href="#partners" class="menu-header__link_color">Партнёры</a>
+                    </li>
+                    <li class="menu-header__link">
                         <a href="#contacts" class="menu-header__link_color">Контакты</a>
-                    </li>
-                    <li class="menu-header__link">
-                        <a href="#contacts" class="menu-header__link_color">Доставка</a>
-                    </li>
-                    <li class="menu-header__link">
-                        <a href="#partners" class="menu-header__link_color">Партнеры</a>
                     </li>
                 </nav>
                 <div class="callback">
@@ -120,9 +120,6 @@
         <section class="advantages" id="advantages">
 
         </section>
-        <section class="contacts" id="contacts">
-
-        </section>
         <section class="delivery" id="delivery">
             <h1 class="delivery__title title__style">Доставка и оплата</h1>
             <div class="delivery-content">
@@ -132,7 +129,7 @@
                     </svg>
                     <h4 class="delivery__headline">Условия доставки и ценообразования обсуждаются с каждым клиентом индивидуально</h4>
                 </div>
-                <!-- /delivery__terms -->
+                <!-- terms /delivery__terms -->
                 <div class="delivery__purchase delivery__text">
                     <svg class="bi bi-credit-card" width="3em" height="3em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" d="M14 3H2a1 1 0 00-1 1v8a1 1 0 001 1h12a1 1 0 001-1V4a1 1 0 00-1-1zM2 2a2 2 0 00-2 2v8a2 2 0 002 2h12a2 2 0 002-2V4a2 2 0 00-2-2H2z" clip-rule="evenodd"/>
@@ -141,7 +138,7 @@
                     </svg>
                     <h4 class="delivery__headline">Способы оплаты: Наличными и Безналичными <span class="delivery__special-text_font">(Visa/MasterCard)</span></h4>
                 </div>
-                <!-- /delivery__purchase -->
+                <!-- purchase /delivery__purchase -->
             </div>
             <!-- /delivery-content -->
         </section>
@@ -149,17 +146,64 @@
             <h1 class="partners__title title__style">Партнёры</h1>
             <div class="partners-content">
                 <div class="partners__images">
-                    <div class="partners__image"><img src="images/nova_pochta.png" alt="" class="partners__image_size"></div>
-                    <div class="partners__image"><img src="images/eldorado.jpg" alt="" class="partners__image_size"></div>
-                    <div class="partners__image"><img src="images/king_pizza.png" alt="" class="partners__image_size"></div>
-                    <div class="partners__image"><img src="images/ditto.jpg" alt="" class="partners__image_size"></div>
-                    <div class="partners__image"><img src="images/hladik.jpg" alt="" class="partners__image_size"></div>
+                    <div class="partners__images-small">
+                        <div class="partners__image partners__image_size_s"><img src="images/nova_pochta.png" alt="" class="partners__image_size"></div>
+                        <div class="partners__image partners__image_size_s"><img src="images/eldorado.jpg" alt="" class="partners__image_size"></div>
+                        <div class="partners__image partners__image_size_s"><img src="images/king_pizza.png" alt="" class="partners__image_size"></div>
+                    </div>
+                    <!-- horizontal images /partners__images-small -->
+                    <div class="partners__images-large">
+                        <div class="partners__image partners__image_size_l"><img src="images/ditto.jpg" alt="" class="partners__image_size"></div>
+                        <div class="partners__image partners__image_size_l"><img src="images/hladik.jpg" alt="" class="partners__image_size"></div>
+                    </div>
+                    <!-- box images /partners__images-large -->
                 </div>
+                <!-- /partners__images -->
             </div>
+            <!-- /partners-content -->
+        </section>
+        <section class="contacts" id="contacts">
+            <h1 class="contacts__title title__style">Контакты</h1>
+            <div class="contacts-content">
+                <div class="contacts-info">
+                    <div class="contacts-info__mail contacts-info__data">
+                        <h5 class="contacts-info__mail-text">Почта:
+                        <a href="mailto:" class="contacts-info__data_font">example@mail.ru</a></h5>
+                    </div>
+                    <div class="contacts-info__tel contacts-info__data">
+                        <h5 class="contacts-info__tel-text">Телефон:
+                        <a href="tel:+" class="contacts-info__data_font">8 (495) 777-77-77</a></h5>
+                    </div>
+                </div>
+                <!-- data /contacts-info -->
+                <div class="contacts-form">
+                    <form>
+                        <div class="form-group">
+                            <label for="">Имя</label>
+                            <input type="text" class="form-control" aria-describedby="" placeholder="Иванов Иван">
+                        </div>
+                        <div class="form-group">
+                          <label for="">Почта</label>
+                          <input type="email" class="form-control contacts-form__input_font" aria-describedby="emailHelp" placeholder="example@mail.ru">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Телефон</label>
+                            <input type="tel" class="form-control contacts-form__input_font" aria-describedby="phoneHelp" placeholder="79457777777">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Сообщение</label>
+                            <textarea class="form-control"></textarea>                        
+                        </div>
+                        <button type="submit" class="btn btn-primary">Отправить</button>
+                      </form>
+                </div>
+                <!-- form /contacts-form -->
+            </div>
+            <!-- /contacts-content -->
         </section>
     </main>
     <footer>
-
+        <center><a href="https://kwork.ru/user/n1ks_on?ref=999817" target="_blank">Proudly made by n1ks_ON. Designed and coded.</a></center>
     </footer>
     <!-- Up -->
     <a href="#"><img src="" alt=""></a>
