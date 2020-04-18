@@ -4,10 +4,10 @@ body {
   overflow-x: hidden;
 }
 
-.products, .contacts, .advantages, .delivery {
+.products, .advantages, .delivery {
   max-width: 1280px;
   margin: 0 auto;
-  padding-bottom: 50px;
+  padding-bottom: 75px;
 }
 
 .selector-for-some-widget {
@@ -223,7 +223,7 @@ header {
 /* partners */
 .partners {
   background-color: #fff;
-  padding-bottom: 50px;
+  padding-bottom: 75px;
 }
 
 .partners__image {
@@ -242,9 +242,9 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .partners__images-large {
@@ -278,6 +278,12 @@ header {
 }
 
 /* contacts */
+.contacts {
+  background-color: #333;
+  color: #f2f2f2;
+  padding-bottom: 75px;
+}
+
 .contacts-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -289,11 +295,17 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .contacts-info, .contacts-form {
   width: 50%;
-  height: 500px;
+  min-height: 500px;
 }
 
 .contacts-info {
@@ -313,6 +325,7 @@ header {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  padding-top: 50px;
 }
 
 .contacts-info__data {
@@ -331,8 +344,12 @@ header {
           justify-content: flex-start;
 }
 
-.contacts-form__input_font, .contacts-info__data_font {
-  font-family: "Roboto", sans-serif;
+.contacts__logo {
+  margin-top: 50px;
+}
+
+.contacts__logo_size {
+  width: 250px;
 }
 
 .contacts-form {
@@ -352,6 +369,19 @@ header {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+}
+
+.contacts-form__input_font, .contacts-info__data_font {
+  font-family: "Roboto", sans-serif;
+}
+
+.contacts-form__input_size {
+  width: 250px;
+}
+
+.contacts-form__area_size {
+  min-height: 150px;
+  width: 350px;
 }
 
 .modal-body_font {
