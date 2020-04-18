@@ -157,24 +157,32 @@ header {
 
 .card {
   width: 300px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.card:hover {
+  -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+          box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
 .card:hover .card-img_size {
   width: 100%;
   height: 188px;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
   margin: 0;
 }
 
 .card:hover .list-group-item:hover {
   background-color: #E0E0E0;
+  text-align: center;
 }
 
 .card-img_size {
   height: 168px;
   width: 90%;
   margin-bottom: 20px;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .card-body {
