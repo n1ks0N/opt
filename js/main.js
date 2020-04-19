@@ -10,13 +10,10 @@ $(document).ready(function() {
         } else {
             $('header').removeClass('headerScroll');
         }
-    });
-
-    $(function() {
-        $('.menu-header__link_color').on('click', function() {
-            $('html, body').animate({
-                scrollTop: $('#top').offset().top
-            }, 600);
-        });
+        if (($(window).width() > 480) && ($('body, html').scrollTop() >= headerChangeHeight)) {
+            $('.up').css('display', 'block');
+        } else {
+            $('.up').css('display', 'none');
+        }
     });
 });
