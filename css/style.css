@@ -9,7 +9,7 @@ body {
   overflow-x: hidden;
 }
 
-.products, .delivery {
+.advantages .delivery {
   max-width: 1280px;
   margin: 0 auto;
   padding-bottom: 75px;
@@ -147,6 +147,7 @@ header {
   text-transform: uppercase;
   text-align: center;
   padding: 75px;
+  font-size: 3rem;
 }
 
 .cards {
@@ -168,7 +169,7 @@ header {
 }
 
 .card {
-  width: 300px;
+  width: 325px;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
@@ -211,8 +212,106 @@ header {
 
 /* advantages */
 .advantages {
-  background-color: #fff;
-  padding-bottom: 75px;
+  background-color: #E0E0E0;
+  padding-bottom: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 100px;
+}
+
+.advantages-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 1280px;
+  background-color: #f2f2f2;
+  -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 20px rgba(0, 0, 0, 0.22);
+          box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 20px rgba(0, 0, 0, 0.22);
+}
+
+.advantages__item {
+  position: relative;
+  width: 33.3%;
+  height: 33.3vh;
+  border: 1px solid #333;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 25px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.advantages__item:hover .advantages__number {
+  opacity: 0.5;
+}
+
+.advantages__item:hover .advantages__text {
+  opacity: 1;
+}
+
+.red {
+  color: red;
+}
+
+.orange {
+  color: orange;
+}
+
+.yellow {
+  color: yellowgreen;
+}
+
+.green {
+  color: green;
+}
+
+.blue {
+  color: blue;
+}
+
+.purple {
+  color: purple;
+}
+
+.advantages__text {
+  font-size: 35px;
+  line-height: 35px;
+  opacity: 0.9;
+}
+
+.advantages__number {
+  position: absolute;
+  bottom: -60px;
+  right: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 200px;
+  opacity: 0.2;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: default;
+}
+
+.advantages__text_font {
+  font-family: "Roboto", sans-serif;
 }
 
 /* delivery */
