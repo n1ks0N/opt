@@ -7,6 +7,7 @@ $(document).ready(function() {
         let headerChangeHeight = mainHeight - 64; // minus header.height
         if ($('body, html').scrollTop() >= headerChangeHeight) {
             $('header').addClass('headerScroll');
+            $('.cards').css('opacity', '1');
         } else {
             $('header').removeClass('headerScroll');
         }
@@ -14,6 +15,16 @@ $(document).ready(function() {
             $('.up').css('display', 'block');
         } else {
             $('.up').css('display', 'none');
+        }
+
+        let cards = headerChangeHeight - 400;
+        if ($('body, html').scrollTop() >= cards) {
+            $('.cards').addClass('opacity');
+        }
+
+        let advantages = headerChangeHeight + 400;
+        if ($('body, html').scrollTop() >= advantages) {
+            $('.advantages-content').addClass('opacity');
         }
     });
 });
