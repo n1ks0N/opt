@@ -26,5 +26,10 @@ $(document).ready(function() {
         if ($('body, html').scrollTop() >= advantages) {
             $('.advantages-content').addClass('opacity');
         }
+
+        let delivery = advantages + 900;
+        if ($('body, html').scrollTop() >= delivery) {
+            $('.delivery-main').addClass('opacity');
+        }
     });
 });

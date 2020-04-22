@@ -19,6 +19,7 @@
             <header>
                 <div class="logo">
                     <a href="#" class="desktop"><img src="images/logo.png" alt="" class="logo_img-size"></a>
+                    <!-- burger for mobile -->
                     <div class="dropdown phone">
                         <button class="btn btn-link" type="button" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <hr class="dropdown__hr">
@@ -34,7 +35,9 @@
                             <div class="dropdown-divider"></div>
                             <a href="#" class="dropdown-item dropdown-menu__logo_bgColor"><img src="images/logo.png" alt="" class="logo_img-size"></a>
                         </div>
+                        <!-- /menu in burger -->
                     </div>
+                    <!-- /burger for mobile -->
                 </div>
                 <nav class="menu-header">
                     <li class="menu-header__link">
@@ -53,6 +56,7 @@
                         <a href="#contacts" class="menu-header__link_color">Контакты</a>
                     </li>
                 </nav>
+                <!-- /menu for desktop -->
                 <div class="callback">
                     <a href="tel:+" class="callback__tel">8 (495) 777-77-77</a>
                     <button type="button" class="btn btn-primary desktop" data-toggle="modal" data-target="#callback">Заказать звонок</button>
@@ -63,7 +67,7 @@
                 <div class="main-content__text">
                     <h1 class="main-content__title">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h1>
                     <h2 class="main-content__subtitle">Consequatur iure necessitatibus deleniti odio harum nam.</h2>
-                    <button type="button" class="btn btn-success btn-lg main-content__btn">Сделать заказ</button>
+                    <button type="button" class="btn btn-success btn-lg main-content__btn btn-2">Сделать заказ</button>
                 </div>
                 <!-- titles /main-content__text -->
                 <div class="main-content__btn-down">
@@ -161,24 +165,35 @@
                     <p class="advantages__number purple">06</p>
                 </div>
             </div>
+            <!-- /advantages-content -->
         </section>
         <section class="delivery" id="delivery">
-            <h1 class="delivery__title title__style">Доставка и способы оплаты</h1>
-            <div class="delivery-content">
-                <div class="delivery__terms delivery__text">
-                    <img src="images/delivery.png" alt="" class="delivery__img_size">
-                    <h4 class="delivery__headline">Условия доставки и ценообразования обсуждаются с каждым клиентом индивидуально</h4>
+            <h1 class="delivery__title title__style">Доставка, способы оплаты и нюансы</h1>
+            <div class="delivery-main">
+                <div class="delivery-content">
+                    <div class="delivery__text">
+                        <img src="images/create.png" alt="" class="delivery__img_size">
+                        <h4 class="delivery__headline">Изготовление длится от <span class="delivery__special-text_font">10</span> рабочих дней</h4>
+                    </div>
+                    <div class="delivery__text">
+                        <img src="images/100.png" alt="" class="delivery__img_size">
+                        <h4 class="delivery__headline">Минимальный заказ составляет <span class="delivery__special-text_font">100</span> штук</h4>
+                    </div>
                 </div>
-                <!-- terms /delivery__terms -->
-                <div class="delivery__purchase delivery__text">
-                    <svg class="bi bi-credit-card" width="3em" height="3em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" d="M14 3H2a1 1 0 00-1 1v8a1 1 0 001 1h12a1 1 0 001-1V4a1 1 0 00-1-1zM2 2a2 2 0 00-2 2v8a2 2 0 002 2h12a2 2 0 002-2V4a2 2 0 00-2-2H2z" clip-rule="evenodd"/>
-                        <rect width="3" height="3" x="2" y="9" rx="1"/>
-                        <path d="M1 5h14v2H1z"/>
-                    </svg>
-                    <h4 class="delivery__headline">Способы оплаты: Наличными и Безналичными <span class="delivery__special-text_font">(Visa/MasterCard)</span></h4>
+                <div class="delivery-content">
+                    <div class="delivery__terms delivery__text">
+                        <img src="images/delivery.png" alt="" class="delivery__img_size">
+                        <h4 class="delivery__headline">Условия доставки и ценообразования обсуждаются с каждым клиентом индивидуально</h4>
+                    </div>
+                    <div class="delivery__purchase delivery__text">
+                        <svg class="bi bi-credit-card" width="3em" height="3em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M14 3H2a1 1 0 00-1 1v8a1 1 0 001 1h12a1 1 0 001-1V4a1 1 0 00-1-1zM2 2a2 2 0 00-2 2v8a2 2 0 002 2h12a2 2 0 002-2V4a2 2 0 00-2-2H2z" clip-rule="evenodd"/>
+                            <rect width="3" height="3" x="2" y="9" rx="1"/>
+                            <path d="M1 5h14v2H1z"/>
+                        </svg>
+                        <h4 class="delivery__headline">Способы оплаты: Наличными и Безналичными <span class="delivery__special-text_font">(Visa/MasterCard)</span></h4>
+                    </div>
                 </div>
-                <!-- purchase /delivery__purchase -->
             </div>
             <!-- /delivery-content -->
         </section>
@@ -188,27 +203,30 @@
                 <div class="form-group offer__group">
                     <input type="text" class="form-control offer__input offer__input_font" placeholder="Ваше имя">
                 </div>
+                <!-- /name -->
                 <div class="form-group offer__group">
                     <input type="text" class="form-control offer__input offer__input_font" placeholder="Номер телефона">
                 </div>
+                <!-- /phone -->
                 <button class="btn btn-warning offer__btn offer__group">Сделать заказ</button>
             </form>
+            <!-- /form -->
         </section>
         <section class="partners" id="partners">
             <h1 class="partners__title title__style">Наши партнёры</h1>
             <div class="partners-content">
                 <div class="partners__images">
+                    <div class="partners__images-large">
+                        <div class="partners__image partners__image_size_l"><img src="images/ditto.jpg" alt="" class="partners__image_size"></div>
+                        <div class="partners__image partners__image_size_l"><img src="images/hladik.jpg" alt="" class="partners__image_size"></div>
+                    </div>
+                    <!-- box images /partners__images-large -->
                     <div class="partners__images-small">
                         <div class="partners__image partners__image_size_s"><img src="images/nova_pochta.png" alt="" class="partners__image_size"></div>
                         <div class="partners__image partners__image_size_s"><img src="images/eldorado.jpg" alt="" class="partners__image_size"></div>
                         <div class="partners__image partners__image_size_s"><img src="images/king_pizza.png" alt="" class="partners__image_size"></div>
                     </div>
                     <!-- horizontal images /partners__images-small -->
-                    <div class="partners__images-large">
-                        <div class="partners__image partners__image_size_l"><img src="images/ditto.jpg" alt="" class="partners__image_size"></div>
-                        <div class="partners__image partners__image_size_l"><img src="images/hladik.jpg" alt="" class="partners__image_size"></div>
-                    </div>
-                    <!-- box images /partners__images-large -->
                 </div>
                 <!-- /partners__images -->
             </div>
@@ -272,17 +290,16 @@
                 <button type="button" class="btn btn-primary" data-target="#callback" data-toggle="modal">Заказать звонок</button>
             </div>
             <!-- /callback -->
-            <div class="by">
-                <br><br>
-                <a href="https://kwork.ru/user/n1ks_on?ref=999817" target="_blank" class="by__link">Proudly made by n1ks_ON. Designed and coded.</a>
-            </div>
-            <!-- /author -->
             <div class="copyright">
                 <span class="copyright__text_font">©</span> Коробочка <span class="copyright__text_font">2020</span>
             </div>
             <!-- /copyright -->
         </div>
         <!-- /footer-content -->
+        <div class="by">
+            <a href="https://kwork.ru/user/n1ks_on?ref=999817" target="_blank" class="by__link">Proudly made by n1ks_ON. Designed and coded.</a>
+        </div>
+        <!-- /author -->
     </footer>
     <!-- Up -->
     <a href="#" class="up"><svg class="bi bi-chevron-double-up" width="3em" height="3em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
