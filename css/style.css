@@ -135,14 +135,20 @@ header {
 
 .main-content__title {
   color: #fff;
+  margin-bottom: 50px;
+  text-align: center;
 }
 
 .main-content__subtitle {
   color: #f2f2f2;
+  margin-bottom: 25px;
+  text-align: center;
 }
 
 .main-content__btn {
   margin: 25px;
+  width: 250px;
+  height: 50px;
 }
 
 .main-content__btn-down {
@@ -247,7 +253,6 @@ header {
       -ms-flex-align: center;
           align-items: center;
   width: 1280px;
-  background-color: #f2f2f2;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 20px rgba(0, 0, 0, 0.22);
@@ -269,6 +274,7 @@ header {
   padding-left: 15px;
   -webkit-transition: .5s ease-in-out;
   transition: .5s ease-in-out;
+  background-color: #f2f2f2;
 }
 
 .advantages__item:hover {
@@ -679,7 +685,7 @@ footer {
 
 /* media */
 @media all and (max-width: 480px) {
-  .desktop, .menu-header {
+  .desktop, .menu-header, .main-content__btn-down {
     display: none;
   }
   header {
@@ -691,6 +697,12 @@ footer {
     height: 2px;
     background-color: #fff;
     width: 50px;
+  }
+  .main-content__title {
+    font-size: 25px;
+  }
+  .main-content__subtitle {
+    font-size: 20px;
   }
   .title__style {
     padding: 25px;
@@ -723,6 +735,37 @@ footer {
   .advantages__title {
     font-size: 35px;
   }
+  .advantages-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+  .advantages__item {
+    border: none;
+    margin-bottom: 25px;
+    padding-left: 15px;
+    padding-right: 0;
+    padding-top: 15px;
+    width: 100%;
+  }
+  .advantages__text {
+    width: 100%;
+    font-size: 25px;
+  }
+  .advantages__number {
+    font-size: 125px;
+  }
   .dropdown-menu__logo_bgColor {
     background-color: #333;
   }
@@ -736,6 +779,37 @@ footer {
   }
   .delivery__purchase {
     margin-top: 35px;
+  }
+  .contacts-info {
+    min-height: 325px;
+    padding-top: 0;
+  }
+  .contacts-form__area_size {
+    width: 100%;
+  }
+  .footer-callback {
+    margin-bottom: 25px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .copyright {
+    text-align: center;
+    width: 100%;
+  }
+  .footer-content {
+    margin-bottom: 25px;
+  }
+  section {
+    padding-bottom: 25px !important;
   }
 }
 
