@@ -317,6 +317,7 @@ header {
   font-size: 35px;
   line-height: 35px;
   opacity: 0.9;
+  z-index: 998;
 }
 
 .advantages__number {
@@ -334,6 +335,13 @@ header {
 
 .advantages__text_font {
   font-family: "Roboto", sans-serif;
+}
+
+.advantages__img {
+  width: 65px;
+  height: 65px;
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 /* delivery */
@@ -383,8 +391,8 @@ header {
 }
 
 .delivery__img_size {
-  width: 50px;
-  height: 50px;
+  width: 64px;
+  height: 64px;
 }
 
 .delivery__headline {
