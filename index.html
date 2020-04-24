@@ -20,23 +20,21 @@
                 <div class="logo">
                     <a href="#" class="desktop"><img src="images/logo.png" alt="" class="logo_img-size"></a>
                     <!-- burger for mobile -->
-                    <div class="dropdown phone">
-                        <button class="btn btn-link" type="button" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <hr class="dropdown__hr">
-                            <hr class="dropdown__hr">
-                            <hr class="dropdown__hr">
-                        </button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenu">
-                            <a href="#products" class="dropdown-item menu-header__link_color">Товары</a>
-                            <a href="#advantages" class="dropdown-item menu-header__link_color">Преимущества</a>
-                            <a href="#delivery" class="dropdown-item menu-header__link_color">Доставка</a>
-                            <a href="#partners" class="dropdown-item menu-header__link_color">Партнёры</a>
-                            <a href="#contacts" class="dropdown-item menu-header__link_color">Контакты</a>
-                            <div class="dropdown-divider"></div>
-                            <a href="#" class="dropdown-item dropdown-menu__logo_bgColor"><img src="images/logo.png" alt="" class="logo_img-size"></a>
+                    <nav role="navigation" class="phone">
+                        <div id="menuToggle">
+                            <input type="checkbox">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <ul id="menu">
+                                <a href="#products"><li>Товары</li></a>
+                                <a href="#advantages"><li>Преимущества</li></a>
+                                <a href="#delivery"><li>Доставка</li></a>
+                                <a href="#partners"><li>Партнёры</li></a>
+                                <a href="#contacts"><li>Контакты</li></a>
+                            </ul>
                         </div>
-                        <!-- /menu in burger -->
-                    </div>
+                    </nav>
                     <!-- /burger for mobile -->
                 </div>
                 <nav class="menu-header">
