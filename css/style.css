@@ -696,7 +696,7 @@ footer {
 }
 
 /* media */
-@media all and (max-width: 480px) {
+@media all and (max-width: 768px) {
   .desktop, .menu-header, .main-content__btn-down {
     display: none;
   }
