@@ -18,7 +18,6 @@ $(document).ready(function() {
         }
 
         // section animate
-
         let cards = headerChangeHeight - 400;
         if ($('body, html').scrollTop() >= cards) {
             $('.cards').addClass('opacity');
