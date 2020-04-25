@@ -224,6 +224,7 @@ header {
 
 /* advantages */
 .advantages {
+  background-image: url(../images/why-bg.png);
   background-color: #E0E0E0;
   padding-bottom: 75px;
   display: -webkit-box;
@@ -346,6 +347,9 @@ header {
 
 /* delivery */
 .delivery {
+  background-image: url(../images/delivery-bg.png);
+  background-size: cover;
+  background-position: center;
   padding-bottom: 25px;
 }
 
@@ -716,8 +720,8 @@ footer {
   #menuToggle a {
     text-decoration: none;
     color: #fff;
-    -webkit-transition: color 0.3s ease;
-    transition: color 0.3s ease;
+    -webkit-transition: color .3s ease;
+    transition: color .3s ease;
   }
   #menuToggle a:hover {
     text-decoration: underline;

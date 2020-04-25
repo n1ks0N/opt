@@ -17,6 +17,8 @@ $(document).ready(function() {
             $('.up').css('display', 'none');
         }
 
+        // section animate
+
         let cards = headerChangeHeight - 400;
         if ($('body, html').scrollTop() >= cards) {
             $('.cards').addClass('opacity');
@@ -31,5 +33,13 @@ $(document).ready(function() {
         if ($('body, html').scrollTop() >= delivery) {
             $('.delivery-main').addClass('opacity');
         }
+    });
+
+    // background advantages animate
+
+    $('.advantages').on('mousemove', function(e) {
+        let amountMovedX = 80 * ((e.pageX + 1) / $(document).width() - 0);
+        let amountMovedY = 80 * ((e.pageY + 1) / $(window).height()) - 130;
+        $('.advantages').css('background-position', amountMovedX + 'px ' + amountMovedY + 'px');
     });
 });
